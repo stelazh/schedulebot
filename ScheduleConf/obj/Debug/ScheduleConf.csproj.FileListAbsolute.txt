@@ -1,0 +1,42 @@
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Bot Application1.dll.config
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Bot Application1.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Bot Application1.pdb
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Autofac.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Chronic.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Bot.Builder.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Bot.Connector.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Rest.ClientRuntime.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Newtonsoft.Json.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.Net.Http.Formatting.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.Web.Http.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.Web.Http.WebHost.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Autofac.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Bot.Builder.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.Bot.Connector.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\Newtonsoft.Json.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.Net.Http.Formatting.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.Web.Http.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\System.Web.Http.WebHost.xml
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\obj\Debug\Bot Application1.dll
+C:\work\workspace\ScheduleConf\ScheduleConf\obj\Debug\Bot Application1.pdb
+C:\work\workspace\ScheduleConf\ScheduleConf\obj\Debug\ScheduleConf.csprojResolveAssemblyReference.cache

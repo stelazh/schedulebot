@@ -1,0 +1,192 @@
+
+        public async Task createReservation(IDialogContext context, LuisResult result)
+        {
+
+
+            string buildingName = string.Empty;
+            string conference_room = string.Empty;
+            string date_1 = string.Empty;
+            string time_1 = string.Empty;
+            string date_value = string.Empty;
+            string time_value = string.Empty;
+
+
+            //1
+            EntityRecommendation building;
+
+            if (result.TryFindEntity(entity_building, out building))
+            {
+                buildingName = building.Entity;
+            }
+
+            if (string.IsNullOrEmpty(buildingName))            
+            {
+                await context.PostAsync("please specify the building");
+                //context.Wait(MessageReceived);
+            }
+            
+            //2--CONFERENCE ROOM
+
+            
+            EntityRecommendation conference;
+
+            if (result.TryFindEntity(ROOM, out conference))
+            {
+                conference_room = conference.Entity;
+                                  
+            }
+        
+            if (string.IsNullOrEmpty(conference_room))
+
+            { 
+                await context.PostAsync("please specify the conference room");
+            }
+
+            //3- date
+
+            EntityRecommendation date;
+
+            if (result.TryFindEntity(DATE, out date))
+            {
+                date_1 = date.Entity;
+                date.Resolution.TryGetValue("date",out date_value);
+            }
+
+            if (string.IsNullOrEmpty(date_1))
+
+            {
+                await context.PostAsync("please specify the date");
+            }
+
+            EntityRecommendation time;
+
+            if (result.TryFindEntity(TIME, out time))
+            {
+                time_1 = time.Entity;
+                time.Resolution.TryGetValue("time", out time_value);
+            }
+
+            if (string.IsNullOrEmpty(date_1))
+
+            {
+                await context.PostAsync("please specify the time");
+            }
+
+            Reservation reservation = new Reservation(buildingName, conference_room, date_value, time_value);
+            if (reservationCollection.Contains(reservation))
+            {
+                await context.PostAsync(" A reservation with the same parameters all ready exist");
+            }
+            else
+            {
+                reservationCollection.Add(reservation);
+                await context.PostAsync("Successfully created a reservation");
+
+            }
+
+            await context.PostAsync($"the entities are building:{buildingName}, conference:{conference_room}, date:{date_1} , time:{time_1}\n. Successfully created a reservation");
+
+            context.Wait(MessageReceived);
+
+
+        }
+
+
+
+        ==================
+
+        
+        [LuisIntent("cancel_reservation")]
+        public async Task cancelReservation(IDialogContext context, LuisResult result)
+        {
+
+            string buildingName = string.Empty;
+            string conference_room = string.Empty;
+            string date_1 = string.Empty;
+            string time_1 = string.Empty;
+            string date_value = string.Empty;
+            string time_value = string.Empty;
+
+
+            //1
+            EntityRecommendation building;
+
+            if (result.TryFindEntity(entity_building, out building))
+            {
+                buildingName = building.Entity;
+            }
+
+            if (string.IsNullOrEmpty(buildingName))
+            {
+                await context.PostAsync("please specify the building");
+                //context.Wait(MessageReceived);
+            }
+
+            //2--CONFERENCE ROOM
+
+
+            EntityRecommendation conference;
+
+            if (result.TryFindEntity(ROOM, out conference))
+            {
+                conference_room = conference.Entity;
+
+            }
+
+            if (string.IsNullOrEmpty(conference_room))
+
+            {
+                await context.PostAsync("please specify the conference room");
+            }
+
+            //3- date
+
+            EntityRecommendation date;
+
+            if (result.TryFindEntity(DATE, out date))
+            {
+                date_1 = date.Entity;
+                date.Resolution.TryGetValue("date", out date_value);
+            }
+
+            if (string.IsNullOrEmpty(date_1))
+
+            {
+                await context.PostAsync("please specify the date");
+            }
+
+            EntityRecommendation time;
+
+            if (result.TryFindEntity(TIME, out time))
+            {
+                time_1 = time.Entity;
+                time.Resolution.TryGetValue("time", out time_value);
+            }
+
+            if (string.IsNullOrEmpty(date_1))
+
+            {
+                await context.PostAsync("please specify the time");
+            }
+
+            Reservation reservation = new Reservation(buildingName, conference_room, date_value, time_value);
+            if (reservationCollection.Contains(reservation))
+            {
+                reservationCollection.Remove(reservation);
+                await context.PostAsync($"The reservation in building:{buildingName} for conference:{conference_room} on date:{date_1} at  time:{time_1}\n has successfully been cancelled.");
+
+            }
+            else
+            {
+               
+                await context.PostAsync($"The reservation in building:{buildingName} for conference:{conference_room} on date:{date_1} at  time:{time_1}\n does not exist, hence cannot be cancelled.");
+
+
+            }
+
+            await context.PostAsync($"the entities are building:{buildingName}, conference:{conference_room}, date:{date_1} , time:{time_1}\n. Successfully cancelled the reservation");
+
+            context.Wait(MessageReceived);
+
+
+        }
